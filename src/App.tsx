@@ -9,6 +9,9 @@ import PencilIcon from './assets/icons/Pencil.svg?react'
 import PlusIcon from './assets/icons/Plus.svg?react'
 import SpinnerIcon from './assets/icons/spinner.svg?react'
 import { Badge } from './components/Badge'
+import { Button } from './components/Button'
+import { ButtonIcon } from './components/ButtonIcon'
+import { InputText } from './components/InputText'
 
 
 
@@ -23,6 +26,11 @@ export default function App() {
       <Icon svg={TrashIcon} className='fill-pink-base'/>
       <Badge variant={'primary'}>5</Badge>
       <Badge variant={'secondary'}>2 de 5</Badge>
+      <Button icon={PlusIcon}>Nova Tarefa</Button>
+      <ButtonIcon icon={TrashIcon}/>
+      <ButtonIcon icon={TrashIcon} variant={'secondary'}/>
+      <ButtonIcon icon={TrashIcon} variant={'tertiary'}/>
+      <InputText/>
     </>
   )
 }
