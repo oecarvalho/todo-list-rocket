@@ -10,7 +10,6 @@ export function LayoutMain(){
             <MainContent>
                 <Outlet/>
             </MainContent>
-            <Footer/>
         </>
     )
 }
